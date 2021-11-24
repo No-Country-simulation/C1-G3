@@ -14,11 +14,11 @@ const Buscador = () => {
                 term: lyric,
                 locale: "en-US",
                 offset: "0",
-                limit: "5",
+                limit: "1",
             },
                 headers: {
                 "x-rapidapi-host": "shazam.p.rapidapi.com",
-                "x-rapidapi-key": "ff815cc32dmsh03e83356253bfc6p193d53jsn0898dcc16eb8",
+                "x-rapidapi-key": process.env.REACT_APP_SHAZAM_KEY,
             }
         }
         axios.request(options)
