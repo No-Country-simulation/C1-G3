@@ -1,10 +1,10 @@
 import React from 'react'
-import Buscador from './Components/Buscador'
+import AppRouter from './Routes/AppRouter'
 
 function App() {
   return (
     <div className="container border text-center">
-      <Buscador />
+      <AppRouter />
     </div>
   );
 }
