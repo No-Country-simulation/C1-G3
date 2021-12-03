@@ -1,16 +1,17 @@
 const Buscador = ({handleSubmit}) => {
 
     return (
-        <>            
-            <h1>Buscador de canciones</h1>
+        <div>           
+            <h2>Buscador de canciones</h2>
+            
             <form onSubmit={ handleSubmit }>
                 <label>
-                    {" "}
-                    Buscar por letra: <input type="text" name="inputText" /> {" "}
-                    <button type="submit"> Buscar </button>
+                {" "}
+                    Buscar por letra: <br /> <input className="input-group mb-3" type="text" name="inputText" /> {" "}
+                    <button className="btn btn-primary" type="submit"> Buscar </button>
                 </label>
             </form>
-        </>
+        </div>
     )
 }
 

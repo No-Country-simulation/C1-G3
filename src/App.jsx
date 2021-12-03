@@ -3,7 +3,7 @@ import AppRouter from './Routes/AppRouter'
 
 function App() {
   return (
-    <div className="container border text-center">
+    <div className="container-{100} border text-center">
       <AppRouter />
     </div>
   );

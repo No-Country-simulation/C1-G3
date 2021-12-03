@@ -6,7 +6,7 @@ const Header = () => {
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <div className="container-fluid">
                     <h2 className="navbar-brand ms-3">
-                        Buscador Musical
+                        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Buscador Musical</Link>
                     </h2>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

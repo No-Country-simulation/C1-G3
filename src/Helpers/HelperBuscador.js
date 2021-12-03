@@ -31,7 +31,8 @@ export const HelperBuscador = (lyric) => {
                     .then(function (response) {
                         const search = response.data
                         setSinger(search.artists.hits[0].artist.name)
-                        setSong(search.tracks.hits[0].track.title)
+                        setSong(search.tracks.hits[0].track)
+                        console.log("Encontrada")
                         blockers[0] = false
                 }).catch(function (error) {
                     console.error(error)
@@ -42,7 +43,7 @@ export const HelperBuscador = (lyric) => {
                 const link = {
                     method: 'GET',
                     url: 'https://youtube-search-results.p.rapidapi.com/youtube-search/',
-                    params: {q: `${song} ${singer}`},
+                    params: {q: `${singer} ${song.title}`},
                     headers: {
                         'x-rapidapi-host': 'youtube-search-results.p.rapidapi.com',
                         'x-rapidapi-key': process.env.REACT_APP_YOUTUBE_SEARCHER_KEY
@@ -53,6 +54,7 @@ export const HelperBuscador = (lyric) => {
                     const data = response.data
                     setYoutubeLink(data.items[0].url)
                     setIdLink(data.items[0].id)
+                    console.log("Enlace Youtube")
                     blockers[1] = false
                 }).catch(function (error) {
                     console.error(error)
@@ -74,6 +76,7 @@ export const HelperBuscador = (lyric) => {
                     const data = response.data
                     setDownload(data.link)
                     blockers[2] = false
+                    console.log("Descargador")
                 }).catch(function (error) {
                         console.error(error)
                 })
@@ -82,6 +85,5 @@ export const HelperBuscador = (lyric) => {
         
         fetchData()
     })
-
     return {singer, song, youtubeLink, download}
 }

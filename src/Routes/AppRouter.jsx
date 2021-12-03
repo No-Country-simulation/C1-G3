@@ -5,6 +5,7 @@ import Start from '../Pages/Start'
 import Searcher from '../Pages/Searcher'
 import Record from '../Pages/Record'
 import AboutUs from '../Pages/AboutUs'
+import PageNotFound from '../Pages/PageNotFound'
 
 const AppRouter = () => {
     return (
@@ -16,6 +17,8 @@ const AppRouter = () => {
                 <Route path="/buscador" element={ <Searcher /> } />
                 <Route path="/historial" element={ <Record /> } />
                 <Route path="/nosotros" element={ <AboutUs /> } />
+
+                <Route path="*" element={ <PageNotFound /> } />
             </Routes>
         </Router>
     )
