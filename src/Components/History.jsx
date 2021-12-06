@@ -4,7 +4,7 @@ import React from 'react'
 const History = () => {
 
     return (
-        <table className="table">
+        <table className="table border-0 text-white-50">
             <thead>
                 <tr>
                     <th>ID</th>

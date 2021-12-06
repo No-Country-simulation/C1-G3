@@ -32,7 +32,6 @@ export const HelperBuscador = (lyric) => {
                         const search = response.data
                         setSinger(search.artists.hits[0].artist.name)
                         setSong(search.tracks.hits[0].track)
-                        console.log("Encontrada")
                         blockers[0] = false
                 }).catch(function (error) {
                     console.error(error)
@@ -54,7 +53,6 @@ export const HelperBuscador = (lyric) => {
                     const data = response.data
                     setYoutubeLink(data.items[0].url)
                     setIdLink(data.items[0].id)
-                    console.log("Enlace Youtube")
                     blockers[1] = false
                 }).catch(function (error) {
                     console.error(error)
@@ -76,7 +74,6 @@ export const HelperBuscador = (lyric) => {
                     const data = response.data
                     setDownload(data.link)
                     blockers[2] = false
-                    console.log("Descargador")
                 }).catch(function (error) {
                         console.error(error)
                 })
@@ -85,5 +82,5 @@ export const HelperBuscador = (lyric) => {
         
         fetchData()
     })
-    return {singer, song, youtubeLink, download}
+    return {singer, song, youtubeLink, download, idLink}
 }

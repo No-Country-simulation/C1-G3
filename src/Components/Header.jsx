@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../Images/shazamLogo.png'
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+        <nav className="navbar navbar-dark bg-secondary navbar-expand-lg">
             <div className="container-fluid">
-                    <h2 className="navbar-brand ms-3">
-                        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Buscador Musical</Link>
+                    <h2 className="navbar-brand m-0">
+                        <Link to="/" className="text-decoration-none"> <img src={logo} height="30" alt="Searcher Logo" /> </Link>
+                        <Link to="/" className="fs-4 fw-bolder text-decoration-none text-light">Zachary</Link>
                     </h2>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -15,7 +17,7 @@ const Header = () => {
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ms-auto mb-lg-0">
                             <li className="navbar-item">
                                 <Link to="/" className="nav-link">Inicio</Link>
                             </li>
