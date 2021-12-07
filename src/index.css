@@ -2,3 +2,53 @@
     background-color: #121212;
     color: darkgray
 }
+
+#bg{
+    background-image: url("https://cdn.discordapp.com/attachments/916540383524163604/917825796607971328/1_x909il0mIirluyiYNFvtzA.jpeg");
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#bg2{
+    background-color: #1c1c1c;
+    min-height: 70vh;
+}
+#bg3{
+    background-color: white;
+    min-height: 70vh;
+}
+
+#btn-1{
+    height: 7vh;
+    width: 40vh;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#image1{
+    background-image: url("https://cdn.discordapp.com/attachments/916540383524163604/917839997296603146/unknown.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#image2{
+    background-image: url("https://cdn.discordapp.com/attachments/916540383524163604/917842483369623622/25-254360_browser-internet-communication-network-search-seo-icon-vector.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#image3{
+    background-image: url("https://cdn.discordapp.com/attachments/916540383524163604/917847363752693840/png-transparent-computer-icons-medicine-medical-record-health-history-medical-history-text-rectangle-black.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#image4{
+    background-image: url("https://cdn.discordapp.com/attachments/916540383524163604/917848644571512832/cloud-computing-download-icon-png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.h100{
+    min-height: 93vh;
+}

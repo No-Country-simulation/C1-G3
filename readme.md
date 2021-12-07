@@ -10,21 +10,20 @@ Por hacer:
 
 En proceso:
 
-- Presentación de página de inicio
 - Crear un historial local
-- Switch entre modo claro/oscuro
 
 Realizado:
 
 - Buscador de la canción con lyrics
 - Soporte PWA
 - Brindar mayor información del resultado de búsqueda
+- Presentación de página de inicio
 #
 
 Detalles de la version actual:
 
-- Mejora visual completa para el buscador.
-- Cambio del Logo y nombre de la página.
+- Landing Page de inicio agregada
+- Pequeño arreglo al inicio del buscador
 #
 
 Deploy de la versión actual:

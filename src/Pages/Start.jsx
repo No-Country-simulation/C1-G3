@@ -1,4 +1,5 @@
 import React from 'react'
+import Landing from '../Components/Landing'
 
 const Start = () => {
 
@@ -7,9 +8,9 @@ const Start = () => {
     background.style.backgroundImage = ""
 
     return (
-        <div>
-            <h2>Buscador Musical - Pagina de Inicio Landing Page</h2>
-        </div>
+        <>
+            <Landing />
+        </>
     )
 }
 

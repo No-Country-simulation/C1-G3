@@ -4,7 +4,7 @@ import logo from '../Images/shazamLogo.png'
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-dark bg-secondary navbar-expand-lg">
+        <nav className="navbar navbar-dark bg-secondary navbar-expand-lg pos-f-t">
             <div className="container-fluid">
                     <h2 className="navbar-brand m-0">
                         <Link to="/" className="text-decoration-none"> <img src={logo} height="30" alt="Searcher Logo" /> </Link>
