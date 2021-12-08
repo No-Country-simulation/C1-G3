@@ -1,5 +1,11 @@
 import { memo } from 'react'
+import { Link } from 'react-router-dom'
 import { HelperBuscador } from '../Helpers/HelperBuscador'
+
+let datosActuales = localStorage.getItem('history')
+datosActuales = datosActuales === null ? [] : JSON.parse(datosActuales)
+
+let controller = true
 
 const Result = ({lyric}) => {
     const {song, singer, youtubeLink, download, idLink} = HelperBuscador(lyric)
@@ -61,10 +67,37 @@ const Result = ({lyric}) => {
                             <img className="img-fluid rounded-circle m-1" src={ song.images.background } alt="Artist" />
                         </section>
                     </div>
+                    <div className="d-flex flex-wrap" id="bg2">
+                        <section className="text-center m-5 text-dark col">
+                            <img className="img-fluid rounded-circle m-1" src={ song.images.coverart } alt="Artist" />
+                        </section>
+                        <section className="m-5 text-start d-flex justify-content-center flex-column text-white col">
+                            <h2 className="display-4 fw-bold fst-italic">¡Canción guardada en el historial!</h2>
+                            <p className="fs-3 fst-italic">
+                                Podrás encontrar en el historial de Zachary esta y las demás canciones
+                                que hayas buscado. ¿Quieres darle un vistazo?
+                            </p>
+                            <Link to="/historial"><button className="btn btn-outline-secondary text-white mb-5" id="btn-1">¡ADELANTE!</button></Link>
+                        </section>
+                    </div>
+
+                    {
+                        datosActuales.push({'nombre': singer,
+                        'cancion': song.title,
+                        'link': youtubeLink.items[0].url,
+                        'descarga': download})
+                    }
+                    {
+                        controller && localStorage.setItem('history', JSON.stringify(datosActuales))
+                        
+                    }
+                    {
+                        controller = false
+                    }
                 </article>
             }
         </>
         )
+    
 }
-
 export default memo(Result)

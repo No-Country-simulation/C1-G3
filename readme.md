@@ -5,12 +5,9 @@
 Por hacer:
 
 - Buscar canción usando Speech to Text
-- Crear la sección "nosotros"
 - Hacer que se vea mas bonito
 
 En proceso:
-
-- Crear un historial local
 
 Realizado:
 
@@ -18,11 +15,12 @@ Realizado:
 - Soporte PWA
 - Brindar mayor información del resultado de búsqueda
 - Presentación de página de inicio
+- Crear un historial local
 #
 
 Detalles de la version actual:
 
-- Mejora visual definitiva a los resultados de búsqueda
+- Historial local básico creado
 #
 
 Deploy de la versión actual:

@@ -26,6 +26,13 @@
     font-size: 3vh;
 }
 
+#btn-searcher{
+    height: 6vh;
+    width: 15vh;
+    text-align: center;
+    font-size: 2.7vh;
+}
+
 #image1{
     background-image: url("https://cdn.discordapp.com/attachments/916540383524163604/917839997296603146/unknown.png");
     background-size: contain;

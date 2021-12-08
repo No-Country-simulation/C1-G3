@@ -9,7 +9,7 @@ const Record = () => {
 
     return (
         <div>
-            <h2>Historial de busqueda</h2>
+            <h2 className="fs-1 p-3 text-white fw-bold">Historial de busqueda</h2>
             <History />
         </div>
     )

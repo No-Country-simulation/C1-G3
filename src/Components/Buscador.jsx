@@ -11,7 +11,7 @@ const Buscador = ({handleSubmit}) => {
                     <label className="fs-5 fw-bold">
                     {" "}
                         Buscar por letra: <br /> <input className="input-group mb-3" type="text" name="inputText" /> {" "}
-                        <button className="btn btn-primary" type="submit"> Buscar </button>
+                        <button className="btn btn-primary" id="btn-searcher" type="submit"> Buscar </button>
                     </label>
                 </form>
             </div>
