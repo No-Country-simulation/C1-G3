@@ -1,5 +1,4 @@
 import { memo } from 'react'
-import { Link } from 'react-router-dom'
 import { HelperBuscador } from '../Helpers/HelperBuscador'
 
 const Result = ({lyric}) => {
@@ -28,30 +27,41 @@ const Result = ({lyric}) => {
             </div>
             }
             {download !== "" &&
-                <div className="container">
-                    <header>
-                        <h3 className="display-3 fw-bold">¡Resultados finales!</h3>
-                    </header>
-                    <div className="d-flex flex-wrap">
-                        <section className="m-5 text-start flex-none col">
-                            <h5 className="fs-3">Nombre del artista: <br /> { `- ${singer}` }</h5>
-                            <h5 className="fs-3">Nombre de la cancion: <br /> { `- ${song.title}` }</h5>
+                <article>
+                    <div className="d-flex flex-wrap" id="bg2">
+                        <section className="m-5 text-start d-flex justify-content-center flex-column text-white col">
+                            <h2 className="display-4 fw-bold">¡CANCIÓN ENCONTRADA!</h2>
                             <br />
-                            <img src={ song.images.background } alt="Artist" height="200" className="m-1" />
-                            <img src={ song.images.coverart } alt="Cover art" height="200" className="m-1" />       
+                            <p className="fs-2 fst-italic">Artista: {singer}</p>
+                            <p className="fs-2 fst-italic">Canción: {song.title}</p>
+                            <p className="fs-3 fst-italic"><a href={youtubeLink.items[0].url} target="noopener">Enlace a Youtube</a></p>
+                            <p className="fs-3 fst-italic"><a href={download} target="noopener">Descarga la canción</a></p>
                         </section>
-                        <section className="text-center m-5 col">
-                            <h6 className="fs-4 fw-bold"><a href={youtubeLink} target="noopener">Enlace a Youtube</a></h6>
-                            <br />
-                            <iframe src={`https://www.youtube.com/embed/${idLink}`} title="Enlace de Youtube" height="400" width="600"></iframe>
-                            <br />
-                            <a href={ download } target="noopener">Descarga la canción</a>
-                            <br />
-                            <Link to="/">Volver al inicio</Link>
+                        <section className="mt-5 col">
+                            <div id="embed">
+                                <iframe className="p-3" id="responsive-iframe" src={`https://www.youtube.com/embed/${idLink}`} title="Enlace de Youtube" />
+                            </div>
+                            
                         </section>
                     </div>
-
-                </div>
+                    <div className="d-flex flex-wrap" id="bg3">
+                        <section className="m-5 text-start flex-column text-dark d-flex justify-content-center col">
+                            <h3 className="display-3 fw-bold">Recomendaciones de Zachary</h3>
+                            <h3 className="fs-1 fst-italic">Basados en tu búsqueda...</h3>
+                            <br />
+                            <p className="fs-4 fw-bold">
+                                <a href={youtubeLink.refinements[0].url} target="noopener">{ youtubeLink.refinements[0].q }</a> <br />
+                                <a href={youtubeLink.refinements[1].url} target="noopener">{ youtubeLink.refinements[1].q }</a> <br />
+                                <a href={youtubeLink.refinements[2].url} target="noopener">{ youtubeLink.refinements[2].q }</a> <br />
+                                <a href={youtubeLink.refinements[3].url} target="noopener">{ youtubeLink.refinements[3].q }</a> <br />
+                                <a href={youtubeLink.refinements[4].url} target="noopener">{ youtubeLink.refinements[4].q }</a>
+                            </p>
+                        </section>
+                        <section className="text-center m-5 text-dark col">
+                            <img className="img-fluid rounded-circle m-1" src={ song.images.background } alt="Artist" />
+                        </section>
+                    </div>
+                </article>
             }
         </>
         )

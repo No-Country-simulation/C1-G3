@@ -22,8 +22,7 @@ Realizado:
 
 Detalles de la version actual:
 
-- Landing Page de inicio agregada
-- Pequeño arreglo al inicio del buscador
+- Mejora visual definitiva a los resultados de búsqueda
 #
 
 Deploy de la versión actual:

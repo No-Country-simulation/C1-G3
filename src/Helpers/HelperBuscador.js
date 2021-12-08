@@ -51,7 +51,7 @@ export const HelperBuscador = (lyric) => {
                       
                 await axios.request(link).then(function (response) {
                     const data = response.data
-                    setYoutubeLink(data.items[0].url)
+                    setYoutubeLink(data)
                     setIdLink(data.items[0].id)
                     blockers[1] = false
                 }).catch(function (error) {

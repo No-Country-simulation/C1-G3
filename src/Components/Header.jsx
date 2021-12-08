@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container-fluid">
                     <h2 className="navbar-brand m-0">
                         <Link to="/" className="text-decoration-none"> <img src={logo} height="30" alt="Searcher Logo" /> </Link>
-                        <Link to="/" className="fs-4 fw-bolder text-decoration-none text-light">Zachary</Link>
+                        <Link to="/" className="fs-4 fw-bolder fst-italic text-decoration-none text-light">Zachary</Link>
                     </h2>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
