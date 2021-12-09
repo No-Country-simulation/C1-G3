@@ -4,9 +4,6 @@
 
 Por hacer:
 
-- Buscar canción usando Speech to Text
-- Hacer que se vea mas bonito
-
 En proceso:
 
 Realizado:
@@ -16,11 +13,13 @@ Realizado:
 - Brindar mayor información del resultado de búsqueda
 - Presentación de página de inicio
 - Crear un historial local
+- Crear la sección Sobre Nosotros
 #
 
 Detalles de la version actual:
 
-- Historial local básico creado
+- Botón "Eliminar Historial" agregado
+- Agregada sección "Sobre Nosotros"
 #
 
 Deploy de la versión actual:

@@ -5,6 +5,12 @@ const history = record === "" ? [] : JSON.parse(record)
 
 const History = () => {
 
+    const handleDelete = (e) => {
+        e.preventDefault()
+        localStorage.removeItem('history')
+        alert('Historial de búsqueda borrado')
+    }
+
     return (
         <>
             <table className="table border-0 text-white-50 table-dark table-striped">
@@ -29,6 +35,7 @@ const History = () => {
                     }
                 </tbody>
             </table>
+            <button className="btn btn-danger" onClick={handleDelete}>Borrar Historial</button>
         </>
     )
 }

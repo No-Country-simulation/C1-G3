@@ -8,6 +8,11 @@
     min-height: 100vh;
     background-size: cover;
 }
+#bgabout{
+    background-image: url("https://cdn.discordapp.com/attachments/916540383524163604/918549664276574278/The-best-sensitive-hd-music-wallpapers-5-tumblr-life-2.png");
+    min-height: 100vh;
+    background-size: cover;
+}
 
 #bg2{
     background-color: #1c1c1c;
@@ -17,6 +22,11 @@
 #bg3{
     background-color: white;
     min-height: 70vh;
+}
+
+#bg4{
+    background-color: white;
+    min-height: 30vh;
 }
 
 #btn-1{

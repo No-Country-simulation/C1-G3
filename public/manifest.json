@@ -1,7 +1,7 @@
 {
-  "short_name": "Buscador",
-  "name": "Buscador Musical",
-  "description": "Buscador de canciones usando sus lyrics",
+  "short_name": "Zachary",
+  "name": "Zachary - Tu nuevo buscador favorito",
+  "description": "Buscador de canciones",
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
