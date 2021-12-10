@@ -56,11 +56,11 @@ const Result = ({lyric}) => {
                             <h3 className="fs-1 fst-italic">Basados en tu búsqueda...</h3>
                             <br />
                             <p className="fs-4 fw-bold">
-                                <a href={youtubeLink.refinements[0].url} target="noopener">{ youtubeLink.refinements[0].q }</a> <br />
-                                <a href={youtubeLink.refinements[1].url} target="noopener">{ youtubeLink.refinements[1].q }</a> <br />
-                                <a href={youtubeLink.refinements[2].url} target="noopener">{ youtubeLink.refinements[2].q }</a> <br />
-                                <a href={youtubeLink.refinements[3].url} target="noopener">{ youtubeLink.refinements[3].q }</a> <br />
-                                <a href={youtubeLink.refinements[4].url} target="noopener">{ youtubeLink.refinements[4].q }</a>
+                                {youtubeLink.refinements[0].url !== undefined && <a href={youtubeLink.refinements[0].url} className="text-decoration-none" target="noopener">{ youtubeLink.refinements[0].q }</a>} <br />
+                                {youtubeLink.refinements[1].url !== undefined && <a href={youtubeLink.refinements[1].url} className="text-decoration-none" target="noopener">{ youtubeLink.refinements[1].q }</a>} <br />
+                                {youtubeLink.refinements[2].url !== undefined && <a href={youtubeLink.refinements[2].url} className="text-decoration-none" target="noopener">{ youtubeLink.refinements[2].q }</a>} <br />
+                                {youtubeLink.refinements[3].url !== undefined && <a href={youtubeLink.refinements[3].url} className="text-decoration-none" target="noopener">{ youtubeLink.refinements[3].q }</a>} <br />
+                                {youtubeLink.refinements[4].url !== undefined && <a href={youtubeLink.refinements[4].url} className="text-decoration-none" target="noopener">{ youtubeLink.refinements[4].q }</a>}
                             </p>
                         </section>
                         <section className="text-center m-5 text-dark col">

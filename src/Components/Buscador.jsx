@@ -8,9 +8,9 @@ const Buscador = ({handleSubmit}) => {
                 <p className="fs-4">Tranquilo, no eres el único al que le pasa</p>
                 <p className="fs-5">Escribe la letra, y nosotros nos encargamos del resto</p>
                 <form onSubmit={ handleSubmit }>
-                    <label className="fs-5 fw-bold">
+                    <label className="fs-5 fw-bold w-auto">
                     {" "}
-                        Buscar por letra: <br /> <input className="input-group mb-3" type="text" name="inputText" /> {" "}
+                        Buscar por letra: <br /> <input className="input-group mb-2" type="text" name="inputText" /> {" "}
                         <button className="btn btn-primary" id="btn-searcher" type="submit"> Buscar </button>
                     </label>
                 </form>
